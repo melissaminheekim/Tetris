@@ -1,0 +1,59 @@
+# OS 관련 파일
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# 에디터 및 IDE 관련 파일
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# 로그 파일
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# 의존성 디렉토리 (나중에 npm을 사용할 경우)
+node_modules/
+package-lock.json
+yarn.lock
+
+# 빌드 결과물
+dist/
+build/
+*.min.js
+*.min.css
+
+# 임시 파일
+*.tmp
+*.temp
+.cache/
+
+# 환경 변수 파일 (민감한 정보가 있을 경우)
+.env
+.env.local
+.env.*.local
+
+# 백업 파일
+*.bak
+*.backup
+*~
+
+# 테스트 커버리지
+coverage/
+.nyc_output/
+

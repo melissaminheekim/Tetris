@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테트리스 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>테트리스</h1>
+        </div>
+        
+        <div class="game-wrapper">
+            <div class="sidebar">
+                <div class="score-panel">
+                    <h2>점수</h2>
+                    <div class="score-value" id="score">0</div>
+                </div>
+                
+                <div class="level-panel">
+                    <h2>레벨</h2>
+                    <div class="level-value" id="level">1</div>
+                </div>
+                
+                <div class="lines-panel">
+                    <h2>라인</h2>
+                    <div class="lines-value" id="lines">0</div>
+                </div>
+                
+                <div class="next-panel">
+                    <h2>다음 블록</h2>
+                    <canvas id="nextCanvas" width="120" height="120"></canvas>
+                </div>
+                
+                <div class="controls">
+                    <h2>조작법</h2>
+                    <div class="control-item">
+                        <span class="key">← →</span>
+                        <span>이동</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">↓</span>
+                        <span>빠른 낙하</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">↑</span>
+                        <span>회전</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">Space</span>
+                        <span>바로 내려가기</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">Enter</span>
+                        <span>일시정지</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="game-area">
+                <canvas id="gameCanvas" width="300" height="600"></canvas>
+                <div class="game-overlay" id="gameOverlay">
+                    <div class="overlay-content">
+                        <h2 id="overlayTitle">게임 시작</h2>
+                        <p id="overlayMessage">시작 버튼을 클릭하거나 Enter 키를 눌러 시작하세요</p>
+                        <button id="startButton">시작</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
+
